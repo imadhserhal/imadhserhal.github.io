@@ -88,6 +88,8 @@
     }
     sections.forEach(function (sec) { sec.hidden = f !== "all" && sec.id !== f; });
     cards.forEach(function (c) { c.hidden = f !== "all" && c.getAttribute("data-discipline") !== f; });
+    var other = document.querySelector(".other-projects");
+    if (other) other.hidden = f !== "all" && f !== "embedded";
     var shown = Array.prototype.filter.call(sections, function (sec) { return !sec.hidden; });
     sections.forEach(function (sec) { sec.classList.remove("first"); });
     if (shown[0]) shown[0].classList.add("first");

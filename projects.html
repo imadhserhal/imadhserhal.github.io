@@ -37,7 +37,7 @@
   <div class="wrap page-intro">
     <span class="label">Imad Serhal · Mechanical · Control Systems · Industrial Automation</span>
     <h1>Projects</h1>
-    <p>Mechanical design, control systems, industrial automation and embedded robotics. Pick a discipline or a card to jump in; each project states the problem, what I did and the result.</p>
+    <p>Mechanical design, control systems and industrial automation, plus a few embedded and robotics projects. Pick a discipline or a card to jump in; each project states the problem, what I did and the result.</p>
   </div>
 
   <nav class="discipline-nav" aria-label="Disciplines">
@@ -47,7 +47,7 @@
         <li><a href="#mechanical" data-filter="mechanical">Mechanical Design <span class="count">2</span></a></li>
         <li><a href="#control" data-filter="control">Control Systems <span class="count">2</span></a></li>
         <li><a href="#automation" data-filter="automation">Industrial Automation <span class="count">4</span></a></li>
-        <li><a href="#embedded" data-filter="embedded">Embedded &amp; Robotics <span class="count">3</span></a></li>
+        <li><a href="#embedded" data-filter="embedded">Other <span class="count">3</span></a></li>
       </ul>
     </div>
   </nav>
@@ -102,24 +102,29 @@
         <strong>Test-data &amp; report generator</strong>
         <span class="pcard-text">Python desktop app that turns logger and CAN data into a finished Word report.</span>
       </a>
-      <a class="pcard" href="#gps-robot" data-discipline="embedded">
+    </div>
+    <div class="other-projects">
+      <h2 class="other-head">Other projects</h2>
+      <div class="pcards pcards-mini">
+      <a class="pcard mini" href="#gps-robot" data-discipline="embedded">
         <img src="assets/img/thumbs/gps-robot.jpg" alt="" loading="lazy" width="640" height="400">
-        <span class="label">Embedded &amp; Robotics</span>
+        <span class="label">Embedded</span>
         <strong>GPS waypoint robot</strong>
         <span class="pcard-text">Arduino robot navigating to GPS waypoints with a calibrated compass.</span>
       </a>
-      <a class="pcard" href="#ertc-turtlebot" data-discipline="embedded">
+      <a class="pcard mini" href="#ertc-turtlebot" data-discipline="embedded">
         <img src="assets/img/thumbs/ertc-turtlebot.jpg" alt="" loading="lazy" width="640" height="400">
-        <span class="label">Embedded &amp; Robotics</span>
+        <span class="label">Embedded</span>
         <strong>Embedded real-time control (STM32)</strong>
         <span class="pcard-text">PWM, encoders, PI speed control and a line follower in C.</span>
       </a>
-      <a class="pcard" href="#weather-cnn" data-discipline="embedded">
+      <a class="pcard mini" href="#weather-cnn" data-discipline="embedded">
         <img src="assets/img/thumbs/weather-cnn.jpg" alt="" loading="lazy" width="640" height="400">
-        <span class="label">Embedded &amp; Robotics</span>
+        <span class="label">Embedded</span>
         <strong>Weather classification (CNN)</strong>
         <span class="pcard-text">Convolutional network for driving images, 89.4% test accuracy.</span>
       </a>
+      </div>
     </div>
   </div>
 
@@ -127,7 +132,7 @@
   <section class="discipline first" id="mechanical">
     <div class="wrap">
       <header>
-        <span class="label">Discipline 1 of 4</span>
+        <span class="label">Discipline 1 of 3</span>
         <h2>Mechanical Design</h2>
         <p>Engine testing from my bachelor’s final year project, and building-services engineering from my first role.</p>
       </header>
@@ -238,7 +243,7 @@
   <section class="discipline" id="control">
     <div class="wrap">
       <header>
-        <span class="label">Discipline 2 of 4</span>
+        <span class="label">Discipline 2 of 3</span>
         <h2>Control Systems</h2>
         <p>Model-based control in MATLAB/Simulink, from electric-machine drives to unstable mechanical systems.</p>
       </header>
@@ -507,7 +512,7 @@ Hz = (3*Tc^2*s^2 + 3*Tc*s + 1) / (Tc*s + 1)^3;</code></pre>
   <section class="discipline" id="automation">
     <div class="wrap">
       <header>
-        <span class="label">Discipline 3 of 4</span>
+        <span class="label">Discipline 3 of 3</span>
         <h2>Industrial Automation</h2>
         <p>Siemens TIA Portal V15 programs tested against Factory I/O plant models through S7-PLCSIM, a virtual-commissioning workflow, plus an in-house Python tool that automates test-data analysis and reporting. The demo videos play silently.</p>
       </header>
@@ -666,7 +671,7 @@ Hz = (3*Tc^2*s^2 + 3*Tc*s + 1) / (Tc*s + 1)^3;</code></pre>
   <section class="discipline" id="embedded">
     <div class="wrap">
       <header>
-        <span class="label">Discipline 4 of 4</span>
+        <span class="label">Other projects</span>
         <h2>Embedded &amp; Robotics</h2>
         <p>Firmware, sensor fusion and perception for small mobile robots.</p>
       </header>
