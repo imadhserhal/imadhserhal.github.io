@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Imad Serhal · Projects</title>
+<meta name="description" content="Imad Serhal, mechanical and control systems engineer. HVAC and fluid system design, control of electric drives, PLC and industrial automation projects.">
+<link rel="canonical" href="https://imadhserhal.github.io/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Imad Serhal · Projects">
+<meta property="og:description" content="Imad Serhal, mechanical and control systems engineer. HVAC and fluid system design, control of electric drives, PLC and industrial automation projects.">
+<meta property="og:url" content="https://imadhserhal.github.io/projects.html">
+<meta property="og:image" content="https://imadhserhal.github.io/assets/img/portrait.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Imad Serhal</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Resume</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-intro">
+    <span class="label">Imad Serhal · Mechanical · Control Systems · Industrial Automation</span>
+    <h1>Projects</h1>
+    <p>Mechanical design, control systems, industrial automation and embedded robotics. Pick a discipline or a card to jump in; each project states the problem, what I did and the result.</p>
+  </div>
+
+  <nav class="discipline-nav" aria-label="Disciplines">
+    <div class="wrap">
+      <ul>
+        <li><a href="#projects" data-filter="all" class="active">All <span class="count">11</span></a></li>
+        <li><a href="#mechanical" data-filter="mechanical">Mechanical Design <span class="count">2</span></a></li>
+        <li><a href="#control" data-filter="control">Control Systems <span class="count">2</span></a></li>
+        <li><a href="#automation" data-filter="automation">Industrial Automation <span class="count">4</span></a></li>
+        <li><a href="#embedded" data-filter="embedded">Embedded &amp; Robotics <span class="count">3</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap overview" id="projects">
+    <div class="pcards">
+      <a class="pcard" href="#hvac" data-discipline="mechanical">
+        <img src="assets/img/thumbs/hvac.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Mechanical Design</span>
+        <strong>HVAC, fluid and MEP design</strong>
+        <span class="pcard-text">Thermal loads, pump, fan and compressor sizing, ductwork and piping drawings.</span>
+      </a>
+      <a class="pcard" href="#ethanol-engine" data-discipline="mechanical">
+        <img src="assets/img/thumbs/ethanol-engine.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Mechanical Design</span>
+        <strong>Ethanol–diesel dual-fuel engine</strong>
+        <span class="pcard-text">Test-bed study of ethanol blends on a diesel engine, plus simulation.</span>
+      </a>
+      <a class="pcard" href="#eesm" data-discipline="control">
+        <img src="assets/img/thumbs/eesm.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Control Systems</span>
+        <strong>EESM traction motor control (thesis)</strong>
+        <span class="pcard-text">FOC, MTPA, flux weakening, MTPV and ESC for a heavy-duty EV motor.</span>
+      </a>
+      <a class="pcard" href="#control-lab" data-discipline="control">
+        <img src="assets/img/thumbs/control-lab.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Control Systems</span>
+        <strong>Control laboratory</strong>
+        <span class="pcard-text">Five labs on real hardware, from servo control to a balancing robot.</span>
+      </a>
+      <a class="pcard" href="#plc-sorting" data-discipline="automation">
+        <img src="assets/img/thumbs/plc-sorting.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Industrial Automation</span>
+        <strong>Conveyor sorting by height</strong>
+        <span class="pcard-text">Siemens S7 program sorting parts by height in Factory I/O.</span>
+      </a>
+      <a class="pcard" href="#plc-elevator" data-discipline="automation">
+        <img src="assets/img/thumbs/plc-elevator.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Industrial Automation</span>
+        <strong>Multi-level elevator</strong>
+        <span class="pcard-text">Sequential control with floor requests and interlocks.</span>
+      </a>
+      <a class="pcard" href="#plc-water-level" data-discipline="automation">
+        <img src="assets/img/thumbs/plc-water-level.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Industrial Automation</span>
+        <strong>Tank water-level control</strong>
+        <span class="pcard-text">Process control of level with valves and an operator panel.</span>
+      </a>
+      <a class="pcard" href="#report-tool" data-discipline="automation">
+        <img src="assets/img/thumbs/report-tool.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Industrial Automation</span>
+        <strong>Test-data &amp; report generator</strong>
+        <span class="pcard-text">Python desktop app that turns logger and CAN data into a finished Word report.</span>
+      </a>
+      <a class="pcard" href="#gps-robot" data-discipline="embedded">
+        <img src="assets/img/thumbs/gps-robot.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Embedded &amp; Robotics</span>
+        <strong>GPS waypoint robot</strong>
+        <span class="pcard-text">Arduino robot navigating to GPS waypoints with a calibrated compass.</span>
+      </a>
+      <a class="pcard" href="#ertc-turtlebot" data-discipline="embedded">
+        <img src="assets/img/thumbs/ertc-turtlebot.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Embedded &amp; Robotics</span>
+        <strong>Embedded real-time control (STM32)</strong>
+        <span class="pcard-text">PWM, encoders, PI speed control and a line follower in C.</span>
+      </a>
+      <a class="pcard" href="#weather-cnn" data-discipline="embedded">
+        <img src="assets/img/thumbs/weather-cnn.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Embedded &amp; Robotics</span>
+        <strong>Weather classification (CNN)</strong>
+        <span class="pcard-text">Convolutional network for driving images, 89.4% test accuracy.</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===================== MECHANICAL DESIGN ===================== -->
+  <section class="discipline first" id="mechanical">
+    <div class="wrap">
+      <header>
+        <span class="label">Discipline 1 of 4</span>
+        <h2>Mechanical Design</h2>
+        <p>Engine testing from my bachelor’s final year project, and building-services engineering from my first role.</p>
+      </header>
+
+      <article class="project" id="hvac">
+        <div class="project-head">
+          <span class="context">Mechanical Design Engineer · My Projects SAL, Lebanon · 2021–2022</span>
+          <h3>HVAC and hydronic system design</h3>
+        </div>
+        <p class="project-summary">I prepared shop drawings and sized compressors, pumps and circulation pumps for residential and high-rise building services.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Scope</th><th>Task</th><th>Method and inputs</th></tr></thead>
+            <tbody>
+              <tr><td>Hydronic</td><td>Pump sizing</td><td>Pump head from segment-by-segment friction loss (pipe diameter, flow, velocity), fittings as equivalent lengths, plus equipment pressure drops</td></tr>
+              <tr><td>Hydronic</td><td>Circulation pumps</td><td>Heat loss through insulated hot-water supply and return pipes, then circulation flow from Q = ṁ·c<sub>p</sub>·ΔT</td></tr>
+              <tr><td>Ventilation</td><td>Fan sizing</td><td>Required static pressure from duct friction per segment (Pa/m × length at the design flow and velocity), plus dampers, grilles and louvres, with a 1.1 safety factor</td></tr>
+              <tr><td>Ventilation</td><td>Duct take-off</td><td>Galvanised sheet area and weight per duct size, grouped by sheet-metal gauge</td></tr>
+              <tr><td>Refrigerant</td><td>Compressor sizing</td><td>VRV outdoor compressor units and matching indoor units, refnet branch kits and refrigerant pipe lengths, selected in Daikin VRV Xpress</td></tr>
+              <tr><td>Drawings</td><td>Shop drawings</td><td>AutoCAD shop drawings for HVAC layouts, copper refrigerant piping, water supply with hot-water return, drainage and heating-water valves, used for installation on site</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="project-head">
+          <span class="context">Worked examples from my calculation sheets · residential project</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Sheet</th><th>Inputs</th><th>Result</th></tr></thead>
+            <tbody>
+              <tr><td>Toilet exhaust fan</td><td>270 m³/h trunk, 2 duct sections</td><td>58 Pa static pressure (10 Pa duct, 42 Pa fittings, ×1.1)</td></tr>
+              <tr><td>Balcony fan 5</td><td>486 m³/h, 3 duct sections</td><td>78 Pa static pressure</td></tr>
+              <tr><td>Balcony fan 6</td><td>630 m³/h, 5 duct sections</td><td>106 Pa static pressure</td></tr>
+              <tr><td>Fresh-air handling unit</td><td>486 m³/h, 3 duct sections</td><td>75 Pa external static pressure</td></tr>
+              <tr><td>Fresh-air ductwork</td><td>Duct sizes and run lengths</td><td>38.6 m² of G90 galvanised sheet, about 216 kg</td></tr>
+              <tr><td>Hot-water circulation pump</td><td>42 m supply and 34 m return PPR pipe with ThermoBreak insulation</td><td>514 W total heat loss, which sets the circulation flow through Q = ṁ·c<sub>p</sub>·ΔT</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="fold-group">
+        <figure class="single" style="max-width:none">
+          <img src="assets/img/mep-hvac-layout.jpg" alt="HVAC layout of a residential apartment: ducted VRV indoor units with blue supply ducts, magenta return ducts, cyan fresh-air ducts, orange condensate drain pipes and labelled diffusers and grilles in every room" loading="lazy">
+          <figcaption>HVAC layout of a residential apartment: concealed ducted VRV indoor units (Daikin FXSQ) with supply, return and fresh-air ductwork, each diffuser and grille sized and labelled in L/s, condensate drains and builder's-work openings. Zoom in for the unit and duct details.</figcaption>
+        </figure>
+
+        <figure class="single" style="max-width:none">
+          <img src="assets/img/mep-drainage-plan.jpg" alt="Coordinated MEP floor plan of a residential apartment, with blue drainage and vent pipe runs between the bathrooms, kitchen and service areas, alongside the electrical and lighting layout and legends" loading="lazy">
+          <figcaption>Drainage pipe layout on a coordinated MEP plan of a residential apartment: 110 mm soundproof soil and waste pipes at 1% slope, 50 mm vent pipes and a 75 mm vent stack up to the roof. Click the drawing to zoom in.</figcaption>
+        </figure>
+
+        <figure class="single" style="max-width:none">
+          <img src="assets/img/mep-water-supply.jpg" alt="Water-supply plan of a residential apartment: red hot-water, blue cold-water and magenta hot-water return pipes run from a gas boiler and storage tanks to the bathrooms and kitchen, labelled with pipe sizes from 20 to 40 mm" loading="lazy">
+          <figcaption>Water-supply plan of a residential apartment: cold water, hot water and hot-water return (Ø20–40 mm) from the gas boiler and 200 L / 300 L storage tanks to each bathroom, kitchen and laundry, with drop heights for every fixture.</figcaption>
+        </figure>
+        </div>
+
+        <ul class="tools"><li>AutoCAD</li><li>Excel calculation sheets</li><li>Duct static pressure</li><li>Daikin VRV Xpress</li><li>Fluid mechanics</li><li>Heat transfer</li></ul>
+      </article>
+
+      <article class="project" id="ethanol-engine">
+        <div class="project-head">
+          <span class="context">B.Eng. final year project · Beirut Arab University · 2021</span>
+          <h3>Ethanol–diesel dual-fuel engine study</h3>
+        </div>
+        <p class="project-summary">Can blending ethanol into diesel cut emissions without giving up too much engine performance? I tested ethanol–diesel blends on a single-cylinder engine test bed, then extended the study with engine simulation.</p>
+
+        <div class="metrics">
+          <div class="metric"><b>E0–E30</b><span>blends tested, 10% steps</span></div>
+          <div class="metric"><b>4 loads</b><span>per blend on the dynamometer</span></div>
+          <div class="metric"><b>377 cc</b><span>single cylinder, CR 19, 7.6 kW</span></div>
+          <div class="metric"><b>λ 1.5–5</b><span>simulated lambda sweep</span></div>
+        </div>
+
+        <dl class="pwr">
+          <div>
+            <dt>Setup</dt>
+            <dd>Cussons P8160 test bed with a Ruggerini RM80 water-cooled diesel engine and a DC dynamometer. Fuel flow was measured by burette, plus air flow and exhaust temperatures.</dd>
+          </div>
+          <div>
+            <dt>What I did</dt>
+            <dd><ul>
+              <li>Ran diesel and 10, 20 and 30% ethanol blends at four loads.</li>
+              <li>Built the calculation sheet for brake power, BSFC, brake thermal efficiency, air–fuel ratio, volumetric efficiency and λ.</li>
+              <li>Modelled the engine in Diesel-RK, checked it against the test data, then swept inlet pressure (1–2 bar), inlet temperature and λ.</li>
+            </ul></dd>
+          </div>
+          <div>
+            <dt>Result</dt>
+            <dd>Ethanol lowered brake power slightly and raised fuel consumption, within an acceptable margin, while CO<sub>2</sub> and NO<sub>x</sub> emissions fell. Brake thermal efficiency improved up to about E10, with no further gain beyond it.</dd>
+          </div>
+        </dl>
+
+        <figure class="single" style="max-width:363px">
+          <img src="assets/img/fyp-test-bed.jpg" alt="Cussons single-cylinder engine test bed with instrument panels above and the diesel engine and DC dynamometer below" width="363" height="373" loading="lazy">
+          <figcaption>The Cussons P8160 single-cylinder test bed used for the blend tests, Beirut Arab University mechanical lab.</figcaption>
+        </figure>
+
+        <ul class="tools"><li>Engine test bed</li><li>Dynamometer</li><li>Diesel-RK</li><li>Excel</li><li>Thermodynamics</li><li>Combustion &amp; emissions</li></ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTROL SYSTEMS ===================== -->
+  <section class="discipline" id="control">
+    <div class="wrap">
+      <header>
+        <span class="label">Discipline 2 of 4</span>
+        <h2>Control Systems</h2>
+        <p>Model-based control in MATLAB/Simulink, from electric-machine drives to unstable mechanical systems.</p>
+      </header>
+
+      <article class="project" id="eesm">
+        <div class="project-head">
+          <span class="context">M.Sc. thesis · University of Padova · heavy-duty IVECO application · 2024</span>
+          <h3>Control of an electrically excited synchronous motor for a heavy-duty EV</h3>
+        </div>
+        <p class="project-summary">A complete control architecture for an EESM traction motor that holds stable speed and torque tracking across the full torque–speed envelope while respecting inverter voltage and current limits.</p>
+
+        <div class="metrics">
+          <div class="metric"><b>−10%</b><span>simulated Joule losses with ESC</span></div>
+          <div class="metric"><b>700 N·m</b><span>load step at 1000 rad/s</span></div>
+          <div class="metric"><b>430 N·m</b><span>load step at 3000 rad/s</span></div>
+          <div class="metric"><b>3 loops</b><span>speed, stator current, excitation</span></div>
+        </div>
+
+        <dl class="pwr">
+          <div>
+            <dt>Problem</dt>
+            <dd>EESMs avoid permanent magnets, but magnetic saturation, cross-coupling and the inverter voltage limit at high speed make them hard to control over a wide operating range.</dd>
+          </div>
+          <div>
+            <dt>What I did</dt>
+            <dd><ul>
+              <li>Built linear and nonlinear d-q models from flux and torque maps.</li>
+              <li>Tuned cascaded PI loops with anti-windup by loop shaping.</li>
+              <li>Generated MTPA and MTPV trajectories as lookup tables.</li>
+              <li>Wrote the switching logic between MTPA, flux weakening and MTPV.</li>
+              <li>Applied Extremum Seeking Control to the excitation current.</li>
+            </ul></dd>
+          </div>
+          <div>
+            <dt>Result</dt>
+            <dd>Stable speed and current tracking at several speed and load points, including load steps and deliberate modelling errors. ESC reduced simulated Joule losses by up to 10%.</dd>
+          </div>
+        </dl>
+
+        <div class="gallery">
+          <figure>
+            <img src="assets/img/eesm-control-architecture.png" alt="Block diagram: speed PI controller feeding an MTPA, flux weakening and MTPV block, then d-q current controllers, dq/abc transforms and the motor" loading="lazy">
+            <figcaption>Control architecture: outer speed loop, operating-region block, inner d-q and excitation current loops.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/eesm-mtpa-map.png" alt="MTPA block diagram next to a torque contour map over id and iq with the MTPA trajectory overlaid" loading="lazy">
+            <figcaption>MTPA / flux-weakening block and the MTPA trajectory on the torque map (id, iq in A).</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/eesm-esc.png" alt="Extremum Seeking Control loop with dither signal, high-pass and low-pass filters and a PI integrator acting on the excitation current" loading="lazy">
+            <figcaption>Extremum Seeking Control on the excitation current, minimising P<sub>j</sub> = R<sub>e</sub>I<sub>e</sub>² + 3/2·R<sub>s</sub>(I<sub>d</sub>² + I<sub>q</sub>²).</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/eesm-load-1000.png" alt="Simulation plot: speed reaches the 1000 rad/s reference, dips briefly when a 700 N·m load is applied, then recovers" loading="lazy">
+            <figcaption>Speed tracking at 1000 rad/s with a 700 N·m load step.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/eesm-current-control.png" alt="Simulink subsystem: PI controllers for id and iq whose outputs are summed with decoupling and back-EMF compensation terms to give the d and q voltage references" loading="lazy">
+            <figcaption>Simulink current-control subsystem: d-q PI loops with decoupling and back-EMF compensation (nonlinear model).</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/eesm-mtpv.png" alt="Plot over id and iq of constant-torque contours, constant flux-linkage contours and a straight fitted MTPV line" loading="lazy">
+            <figcaption>MTPV trajectory fitted on the motor maps at 3.64 A excitation, replotted from the MATLAB figure.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/img/eesm-nonlinear-model.png" alt="Simulink nonlinear motor model: d, q and excitation voltage equations feed an inverted inductance matrix block and integrators giving id, iq and ie; lookup tables give the flux linkages; a mechanical block computes speed and angle from electromagnetic and load torque" loading="lazy">
+            <figcaption>Nonlinear EESM model: d, q and excitation voltage equations solved through the inverted inductance matrix, flux linkages from lookup maps of i<sub>d</sub>, i<sub>q</sub> and i<sub>e</sub>, and the mechanical model with load torque.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/eesm-excitation-loop.png" alt="Simulink excitation current loop: error between excitation current reference and measurement, PI controller with anti-windup back-calculation, two saturation blocks and a first-order delay block" loading="lazy">
+            <figcaption>Excitation current loop: PI controller with anti-windup back-calculation and voltage saturation, followed by the first-order delay 1/(T<sub>d</sub>·s + 1).</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/eesm-esc-results.png" alt="Two plots of excitation current reference over 10 seconds: from a start near 5 A it drops within half a second and settles into a small oscillation below 1 A, at 1000 rad/s and at 3000 rad/s" loading="lazy">
+            <figcaption>ESC results: the excitation current reference leaves its 5 A starting point and settles into a small dither around the loss-minimising value, below nominal speed (top) and in flux weakening (bottom).</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/eesm-load-3000.png" alt="Simulation plot: speed rises to the 3000 rad/s reference in under half a second, dips briefly when a 430 N·m load is applied at 5 s, then recovers" loading="lazy">
+            <figcaption>Speed tracking at 3000 rad/s, in flux weakening, with a 430 N·m load step at 5 s.</figcaption>
+          </figure>
+        </div>
+
+        <ul class="tools"><li>MATLAB</li><li>Simulink</li><li>FOC</li><li>MTPA / MTPV</li><li>Flux weakening</li><li>Lookup tables</li><li>Extremum Seeking Control</li></ul>
+
+        <div class="code-group">
+          <details class="code">
+            <summary><span class="grow"><span class="t">Operating-region selection: MTPA, flux weakening, MTPV</span><span class="f">Simulink MATLAB Function block · nonlinear model</span></span></summary>
+<pre><code class="language-matlab">function [Id, Iq] = fcn(IdFW, IdMTPA, IqMTPA, we, weRef, Tref, IdMTPV, IqMTPV, I)
+    Ld = 0.31e-3;
+    Lq = 0.15e-3;
+    lamex = 38.4e-3 * 3.8;
+    P = 6;
+    scaling_factor = Tref / 1177;
+
+    if I &gt; 736
+        if we &gt;= 1894
+            if we &lt;= 0.999 * weRef
+                Id = IdMTPA + IdFW;
+                Iq = sqrt(736^2 - Id^2) * scaling_factor;
+            else
+                Id = IdFW;
+                Iq = Tref / (9 * ((Ld - Lq) * IdMTPA + lamex));
+            end
+        else
+            Id = IdMTPA;
+            Iq = IqMTPA;
+        end
+    else
+        Id = IdMTPV * abs(scaling_factor);
+        Iq = IqMTPV * scaling_factor;
+    end
+end</code></pre>
+          </details>
+          <details class="code">
+            <summary><span class="grow"><span class="t">PI tuning by loop shaping</span><span class="f">controller.m · MATLAB · excerpt</span></span></summary>
+<pre><code class="language-matlab">% Plants seen by each PI loop (half switching period as converter delay)
+Pd      = (1/(1 + s*Td)) * (1/(R + s*Ld));     % d-axis current
+Pq      = (1/(1 + s*Td)) * (1/(R + s*Lq));     % q-axis current
+Pe      = (1/(1 + s*Td)) * (1/(Re + s*Le));    % excitation current
+P_speed = P_current * (6/(J*s + B)) * torque;  % speed, inner loop closed
+
+% Target crossover and phase margin per loop (bandwidth separation)
+wgc_d          = 3000;  phasemrgn_d          = 70*deg2rad;
+wgc_q          = 3000;  phasemrgn_q          = 70*deg2rad;
+wgc_excitation = 1000;  phasemrgn_excitation = 75*deg2rad;
+wgc_speed      = 500;   phasemrgn_speed      = 60*deg2rad;
+
+[Kpd, Kid] = pid_bode(Pd,      wgc_d,          phasemrgn_d);     % Kp = 0.9688, Ki = 197.73
+[Kpq, Kiq] = pid_bode(Pq,      wgc_q,          phasemrgn_q);     % Kp = 0.4685, Ki = 111.17
+[Kpe, Kie] = pid_bode(Pe,      wgc_excitation, phasemrgn_excitation);
+[Kpv, Kiv] = pid_bode(P_speed, wgc_speed,      phasemrgn_speed);
+
+function [Kp, Ki, Tpi] = pid_bode(P1, wgc, phasemrgn)
+    % PI gains that put the crossover at wgc with the requested phase margin
+    Pcmplx = evalfr(P1, 1i*wgc);
+    Tpi = tan(-pi + phasemrgn - angle(Pcmplx) + pi/2) / wgc;
+    Ki  = (1/abs(Pcmplx)) * (wgc / sqrt(1 + (wgc*Tpi)^2));
+    Kp  = Ki * Tpi;
+end</code></pre>
+          </details>
+          <details class="code">
+            <summary><span class="grow"><span class="t">MTPA trajectory search on the torque map</span><span class="f">mtpa_traje.m · MATLAB · excerpt</span></span></summary>
+<pre><code class="language-matlab">% For each current amplitude, sweep the current angle and keep the (id, iq)
+% pair that gives the most torque on the interpolated flux-map torque data.
+for i = 1:100
+    I_peak = torque_mtpa(i);
+    max_torque_i = -Inf;
+    for angle = linspace(0, pi/2, 100)
+        id = I_peak * cos(angle);
+        iq = I_peak * sin(angle);
+        torque = interp2(fine_Id_values, fine_Iq_values, Fine_Torque, id, iq, 'linear');
+        if torque &gt; max_torque_i
+            max_torque_i = torque;
+            best_id = id;
+            best_iq = iq;
+        end
+    end
+    id_mtpa(i, excitation_index) = best_id;   % stored as lookup tables,
+    iq_mtpa(i, excitation_index) = best_iq;   % one column per excitation level
+end</code></pre>
+          </details>
+        </div>
+      </article>
+
+      <article class="project" id="control-lab">
+        <div class="project-head">
+          <span class="context">M.Sc. laboratory series · University of Padova · Quanser SRV02 hardware</span>
+          <h3>Control laboratory: from DC servo to balancing robot</h3>
+        </div>
+        <p class="project-summary">Five labs on real laboratory hardware, each adding a control technique: physical modelling, robust and digital control, observers, LQR with parameter identification, and finally an unstable two-wheeled balancing robot.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Lab</th><th>Plant</th><th>What I designed</th></tr></thead>
+            <tbody>
+              <tr><td>Lab 0</td><td>DC servomotor with planetary gearbox</td><td>Physical parameter model, real-time interface, PID design</td></tr>
+              <tr><td>Lab 1</td><td>Servo position control</td><td>Nominal and robust state-space control, PID with anti-windup, feedforward</td></tr>
+              <tr><td>Lab 2</td><td>Servo position, digital</td><td>Exact, Tustin and Euler discretisation, direct digital design, state observers</td></tr>
+              <tr><td>Lab 3</td><td>Servo with resonant two-mass load</td><td>Least-squares identification, PID, pole placement, LQR, anti-windup</td></tr>
+              <tr><td>Lab 4</td><td>Two-wheeled balancing robot</td><td>Discrete LQR with integral action, complementary tilt filter, yaw control</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="note">The lab supplied the plants and hardware interface blocks. Every controller was designed and tuned in MATLAB/Simulink, then tested on the real servo.</p>
+
+        <div class="split">
+          <figure class="single" style="max-width:none">
+            <img src="assets/img/lab2-sampling.jpg" alt="Three real-time oscilloscope plots of a 50 degree step response. At 1 ms sampling the output settles cleanly with zero overshoot; at 10 ms it oscillates around the setpoint; at 50 ms it oscillates heavily" loading="lazy">
+            <figcaption>Lab 2, real hardware: robust direct-digital state-space controller tracking a 50° step (output, error, reference). The same design settles cleanly at 1 ms sampling and loses stability as the sampling time grows.</figcaption>
+          </figure>
+          <div class="stack">
+            <div class="project-head">
+              <span class="context">Lab 2 highlight · digital position control</span>
+              <h3 style="font-size:var(--step-1)">Emulation vs direct digital design</h3>
+            </div>
+            <p>A continuous PID controller was discretised four ways and a state-space controller was designed both by emulation and directly in discrete time, each run in simulation and on the servo.</p>
+            <div class="table-wrap">
+              <table style="min-width:0">
+                <thead><tr><th>Real time, Ts = 1 ms</th><th>t<sub>s,5%</sub></th><th>Overshoot</th></tr></thead>
+                <tbody>
+                  <tr><td>PID, backward Euler</td><td>0.175 s</td><td>36%</td></tr>
+                  <tr><td>PID, Tustin</td><td>0.16 s</td><td>36%</td></tr>
+                  <tr><td>PID, exact</td><td>0.175 s</td><td>34%</td></tr>
+                  <tr><td>State-space, emulation</td><td>0.164 s</td><td>0%</td></tr>
+                  <tr><td>Robust SS, direct digital</td><td>0.17 s</td><td>0%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure>
+            <img src="assets/img/lab4-state-feedback.png" alt="Simulink diagram of the balancing robot controller: reference feedforward gains, state feedback gain on tilt, position and their rates, and a discrete integrator with gain Ki" loading="lazy">
+            <figcaption>Lab 4, balancing robot: discrete state-feedback controller with integral action and reference feedforward.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/lab4-complementary-filter.png" alt="Simulink diagram of a complementary filter combining the integrated gyro rate with the accelerometer tilt angle from atan2" loading="lazy">
+            <figcaption>Lab 4: complementary filter fusing gyroscope rate and accelerometer tilt into one angle estimate.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/lab3-robust-controller.png" alt="Simulink diagram of the Lab 3 robust state-space controller with Nx and Nu feedforward, robust state-feedback gain, integral action and output saturation" loading="lazy">
+            <figcaption>Lab 3, resonant load: robust state-space controller with integral action, feedforward (N<sub>x</sub>, N<sub>u</sub>) and actuator saturation.</figcaption>
+          </figure>
+        </div>
+
+        <ul class="tools"><li>MATLAB</li><li>Simulink</li><li>State-space</li><li>LQR</li><li>Observers</li><li>Robust control</li><li>Discretisation</li><li>System identification</li></ul>
+
+        <details class="code">
+          <summary><span class="grow"><span class="t">Balancing robot: discrete LQR with integral action</span><span class="f">Robust_SS_Matlabcode.m · MATLAB · excerpt</span></span></summary>
+<pre><code class="language-matlab">% Linearised robot model: M q'' + Fv q' + G q = B u
+A = [zeros(2,2), eye(2,2);
+     -inv(M)*G,  -inv(M)*Fv1];
+B = [zeros(2,2); inv(M)] * [1; -1] * 2*gbox.N*mot.Kt/mot.R;
+C = [1, 0, 0, 0];
+
+% Zero-order-hold discretisation, then augment with an integrator on the output
+discPlant = c2d(ss(A, B, C, 0), Ts, 'zoh');
+[Ad, Bd, Cd, Dd] = ssdata(discPlant);
+phiE = [1 Cd; zeros(4,1) Ad];
+sigE = [0; Bd];
+
+% Bryson's rule: weights from the largest acceptable deviations
+phi_bar   = pi/36;
+theta_bar = pi/360;
+u_bar     = 1;
+Q   = diag([0.1, 1/phi_bar^2, 1/theta_bar^2, 0, 0]);
+r   = 1/u_bar^2;
+rho = 5000;
+
+K     = dlqr(phiE, sigE, Q, r*rho);
+Ki    = K(1);      % integral gain
+K_rob = K(2:5);    % state-feedback gains
+
+% Third-order complementary filter for tilt-angle estimation
+s  = (tf('z', Ts) - 1)/Ts;
+Hz = (3*Tc^2*s^2 + 3*Tc*s + 1) / (Tc*s + 1)^3;</code></pre>
+        </details>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== INDUSTRIAL AUTOMATION ===================== -->
+  <section class="discipline" id="automation">
+    <div class="wrap">
+      <header>
+        <span class="label">Discipline 3 of 4</span>
+        <h2>Industrial Automation</h2>
+        <p>Siemens TIA Portal V15 programs tested against Factory I/O plant models through S7-PLCSIM, a virtual-commissioning workflow, plus an in-house Python tool that automates test-data analysis and reporting. The demo videos play silently.</p>
+      </header>
+
+      <article class="project" id="plc-sorting">
+        <div class="split">
+          <div class="video">
+            <video src="assets/video/plc-sorting.mp4" poster="assets/img/plc-02_sorting_by_height.jpg" muted playsinline loop preload="metadata" aria-label="Factory I/O simulation of a conveyor cell sorting boxes by height"></video>
+            <button class="vbtn" type="button">Play</button>
+            <span class="tag">Factory I/O · no audio</span>
+          </div>
+          <div class="stack">
+            <div class="project-head">
+              <span class="context">PLC project · TIA Portal V15 · Factory I/O</span>
+              <h3>Conveyor sorting by height</h3>
+            </div>
+            <p>A conveyor cell that detects each workpiece's height with sensors and routes it to the correct outfeed line. The PLC coordinates conveyors, sensors and diverters and handles operator start and stop from a control panel.</p>
+            <ul class="tools"><li>Siemens S7</li><li>TIA Portal V15</li><li>S7-PLCSIM</li><li>Factory I/O</li><li>Sensor / actuator I/O</li></ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="plc-elevator">
+        <div class="split">
+          <div class="video">
+            <video src="assets/video/plc-elevator.mp4" poster="assets/img/plc-01_elevator_control.jpg" muted playsinline loop preload="metadata" aria-label="Factory I/O simulation of a multi-level elevator moving loads between floors"></video>
+            <button class="vbtn" type="button">Play</button>
+            <span class="tag">Factory I/O · no audio</span>
+          </div>
+          <div class="stack">
+            <div class="project-head">
+              <span class="context">PLC project · TIA Portal V15 · Factory I/O</span>
+              <h3>Multi-level elevator control</h3>
+            </div>
+            <p>Sequential control of a freight elevator. The program handles floor requests, position sensing and direction interlocks, and hands loads to the conveyor at each level.</p>
+            <ul class="tools"><li>Sequential logic</li><li>Interlocks</li><li>TIA Portal V15</li><li>S7-PLCSIM</li><li>Factory I/O</li></ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="plc-water-level">
+        <div class="split">
+          <div class="video">
+            <video src="assets/video/plc-water-level.mp4" poster="assets/img/plc-03_water_level_control.jpg" muted playsinline loop preload="metadata" aria-label="Factory I/O simulation of a water tank with fill and discharge valves and a level gauge"></video>
+            <button class="vbtn" type="button">Play</button>
+            <span class="tag">Factory I/O · no audio</span>
+          </div>
+          <div class="stack">
+            <div class="project-head">
+              <span class="context">PLC project · TIA Portal V15 · Factory I/O</span>
+              <h3>Tank water-level control</h3>
+            </div>
+            <p>A process-control cell with a level transmitter, fill and discharge valves, a flow meter and an operator panel. The PLC reads the level and drives the valves to keep the tank within its operating band.</p>
+            <ul class="tools"><li>Process control</li><li>Analog level input</li><li>Valve control</li><li>TIA Portal V15</li><li>Factory I/O</li></ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="report-tool">
+        <div class="project-head">
+          <span class="context">Industrial tool · Python desktop application</span>
+          <h3>Test-data analysis and report generator</h3>
+        </div>
+        <p>Writing a test report used to mean exporting logger data, cleaning it in spreadsheets, building plots by hand and pasting everything into a Word template. I built a desktop application that does the whole chain in one place: it reads data-logger and CAN-bus logs, lets the engineer clean and analyse the signals interactively, and generates a complete, numbered Word report from a template in one click.</p>
+        <figure class="single" style="max-width:none">
+          <img src="assets/img/report-tool-flow.png" alt="Five-step workflow: inputs, clean and align, analyse, assemble, generate a numbered Word report" loading="lazy">
+          <figcaption>Workflow of the application. Each step is a tab in the GUI.</figcaption>
+        </figure>
+        <div class="table-wrap">
+          <table>
+          <thead><tr><th>Area</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Data import</td><td>Reads multi-channel data-logger exports (CSV/TXT) and CAN-bus logs, merges several logs, maps channels to physical quantities and auto-detects time units (µs to hours, or timestamps).</td></tr>
+            <tr><td>Signal analysis</td><td>Interactive matplotlib plots embedded in the GUI: range slider, crop, cut-and-stitch of idle periods, overlays across logs, stacked fault and status timelines, and click-to-save point metrics.</td></tr>
+            <tr><td>Performance</td><td>Block-wise min/max downsampling keeps traces of millions of samples responsive without hiding peaks.</td></tr>
+            <tr><td>Report assembly</td><td>Drag-and-drop results tables with merged cells and colour fills, routing of figures to results or annexes, automatic table and figure numbering, revision history.</td></tr>
+            <tr><td>Report generation</td><td>Fills a Jinja/docxtpl Word template: header fields, instrument and setup tables, pass/fail colour coding, conditional analysis sections, embedded photos and plots.</td></tr>
+            <tr><td>Integration</td><td>Pulls test-request details from the team's project-management tool through its REST API, and ships as a standalone Windows executable (PyInstaller).</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="note">CAN frame decoding uses an existing in-house library. Company data, templates and product-specific signal definitions are not shown.</p>
+        <ul class="tools"><li>Python</li><li>PySide6 (Qt)</li><li>pandas</li><li>NumPy</li><li>matplotlib</li><li>docxtpl / python-docx</li><li>REST API</li><li>PyInstaller</li></ul>
+
+        <div class="code-group">
+          <details class="code">
+            <summary><span class="grow"><span class="t">Min-max downsampling for long traces</span><span class="f">Python · NumPy</span></span></summary>
+<pre><code class="language-python">def min_max_downsample(t, y, max_points=30000):
+    """Reduce a long trace for plotting while keeping every peak and dip:
+    split it into blocks and keep the min and max sample of each block."""
+    if len(t) &lt;= max_points: return t, y
+    try:
+        num_blocks = max_points // 2
+        block_size = len(t) // num_blocks
+        if block_size &lt;= 1: return t, y
+        trunc_len = block_size * num_blocks
+        t_trunc = t[:trunc_len].reshape((num_blocks, block_size))
+        y_trunc = y[:trunc_len].reshape((num_blocks, block_size))
+        y_safe = np.nan_to_num(y_trunc, nan=0.0)
+        min_idx = np.argmin(y_safe, axis=1)
+        max_idx = np.argmax(y_safe, axis=1)
+        row_idx = np.arange(num_blocks)
+        t_min, y_min = t_trunc[row_idx, min_idx], y_trunc[row_idx, min_idx]
+        t_max, y_max = t_trunc[row_idx, max_idx], y_trunc[row_idx, max_idx]
+        t_comb = np.concatenate([t_min, t_max])
+        y_comb = np.concatenate([y_min, y_max])
+        sort_order = np.argsort(t_comb)
+        return t_comb[sort_order], y_comb[sort_order]
+    except Exception:
+        step = max(1, len(t) // max_points)
+        return t[::step], y[::step]</code></pre>
+          </details>
+          <details class="code">
+            <summary><span class="grow"><span class="t">Time-axis parser for logger exports</span><span class="f">Python · pandas</span></span></summary>
+<pre><code class="language-python">def process_time_column(df):
+    """Convert the first column of a logger export to seconds, whatever
+    its format: a unit in the header, a unit in the cells, or timestamps."""
+    col_name = str(df.columns[0]).strip()
+    unit_match = re.search(r'[\[\(](us|µs|ms|s|sec|min|m|h|hr)[\]\)]', col_name, re.IGNORECASE)
+    scale_factor = 1.0
+    if unit_match:
+        unit = unit_match.group(1).lower()
+        if unit in ['us', 'µs']: scale_factor = 1e-6
+        elif unit == 'ms': scale_factor = 1e-3
+        elif unit in ['s', 'sec']: scale_factor = 1.0
+        elif unit in ['min', 'm']: scale_factor = 60.0
+        elif unit in ['h', 'hr']: scale_factor = 3600.0
+
+    raw_series = df[df.columns[0]].astype(str).str.strip()
+    first_cell = raw_series.dropna().iloc[0] if not raw_series.dropna().empty else ""
+    cell_match = re.search(r'([a-zA-Zµ]+)$', first_cell)
+    if cell_match and not unit_match:
+        inline_unit = cell_match.group(1).lower()
+        if inline_unit == 'ms': scale_factor = 1e-3
+        elif inline_unit in ['min', 'm']: scale_factor = 60.0
+        raw_series = raw_series.str.replace(r'[a-zA-Zµ]+$', '', regex=True)
+
+    try:
+        return pd.to_numeric(raw_series).to_numpy() * scale_factor
+    except (ValueError, TypeError):
+        pass
+
+    try:
+        t_dt = pd.to_datetime(raw_series, format='mixed', dayfirst=True)
+        return (t_dt - t_dt.iloc[0]).dt.total_seconds().to_numpy()
+    except Exception:
+        return np.arange(len(df), dtype=float)</code></pre>
+          </details>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== EMBEDDED & ROBOTICS ===================== -->
+  <section class="discipline" id="embedded">
+    <div class="wrap">
+      <header>
+        <span class="label">Discipline 4 of 4</span>
+        <h2>Embedded &amp; Robotics</h2>
+        <p>Firmware, sensor fusion and perception for small mobile robots.</p>
+      </header>
+
+      <article class="project" id="gps-robot">
+        <div class="project-head">
+          <span class="context">University project · Arduino Mega</span>
+          <h3>GPS waypoint-navigation robot</h3>
+        </div>
+        <p class="project-summary">A small ground robot that drives itself to a list of GPS waypoints, using a calibrated magnetometer for heading and Bluetooth for commands.</p>
+
+        <div class="split portrait-media">
+          <div class="stack">
+          <dl class="pwr" style="grid-template-columns:1fr">
+            <div>
+              <dt>What I did</dt>
+              <dd><ul>
+                <li>Integrated an MPU9255 / AK8963 magnetometer for heading and wrote separate calibration and heading-test sketches.</li>
+                <li>Wrote the bearing and Haversine distance functions used for guidance.</li>
+                <li>Drove the motors through direct PWM pin control of the motor driver.</li>
+                <li>Integrated GPS, Bluetooth, ultrasonic sensing and motor commands with serial debugging.</li>
+              </ul></dd>
+            </div>
+            <div>
+              <dt>How it navigates</dt>
+              <dd>The robot computes the bearing to the active waypoint and compares it with its heading. Within ±15° it drives forward, otherwise it turns the shorter way. Within 1 m it stops and moves to the next waypoint.</dd>
+            </div>
+          </dl>
+          <figure class="single arch" style="margin:0">
+            <svg viewBox="0 0 560 230" role="img" aria-label="System diagram: GPS, magnetometer, Bluetooth and ultrasonic sensor feed an Arduino Mega, which drives the motor driver and DC motors">
+              <defs><marker id="arr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path class="ah" d="M0,0 L8,4 L0,8 z" style="stroke:none"/></marker></defs>
+              <rect x="10" y="14" width="140" height="36" rx="4"/><text x="80" y="37" text-anchor="middle">GPS receiver</text>
+              <rect x="10" y="66" width="140" height="36" rx="4"/><text x="80" y="89" text-anchor="middle">Magnetometer</text>
+              <rect x="10" y="118" width="140" height="36" rx="4"/><text x="80" y="141" text-anchor="middle">Bluetooth</text>
+              <rect x="10" y="170" width="140" height="36" rx="4"/><text x="80" y="193" text-anchor="middle">Ultrasonic</text>
+              <rect class="core" x="215" y="66" width="130" height="88" rx="4"/><text x="280" y="106" text-anchor="middle">Arduino</text><text x="280" y="124" text-anchor="middle">Mega</text>
+              <rect x="410" y="66" width="140" height="36" rx="4"/><text x="480" y="89" text-anchor="middle">Motor driver</text>
+              <rect x="410" y="118" width="140" height="36" rx="4"/><text x="480" y="141" text-anchor="middle">DC motors</text>
+              <path d="M150,32 C185,32 185,84 213,84"/>
+              <path d="M150,84 L213,96"/>
+              <path d="M150,136 L213,124"/>
+              <path d="M150,188 C185,188 185,140 213,140"/>
+              <path d="M345,90 L408,84"/>
+              <path d="M480,102 L480,116"/>
+            </svg>
+            <figcaption>Hardware represented in the firmware.</figcaption>
+          </figure>
+          </div>
+          <div class="stack">
+            <div class="video portrait">
+              <video src="assets/video/gps-robot.mp4" poster="assets/img/gps-robot-poster.jpg" muted playsinline loop preload="metadata" aria-label="Outdoor field test of the robot driving across a car park, commanded from a phone"></video>
+              <button class="vbtn" type="button">Play</button>
+              <span class="tag">Field test · no audio</span>
+            </div>
+            <figcaption>Outdoor field test, with commands sent from a phone over Bluetooth.</figcaption>
+          </div>
+        </div>
+
+        <ul class="tools"><li>C / C++</li><li>Arduino Mega</li><li>TinyGPS++</li><li>MPU9255</li><li>Bluetooth serial</li><li>Sensor calibration</li></ul>
+
+        <div class="code-group">
+          <details class="code">
+            <summary><span class="grow"><span class="t">Bearing and Haversine distance to a waypoint</span><span class="f">GPS_compass.ino · C++</span></span></summary>
+<pre><code class="language-cpp">float bearing(double latA, double lonA, double latB, double lonB)
+{
+  latA = latA * PI / 180.0;
+  lonA = lonA * PI / 180.0;
+  latB = latB * PI / 180.0;
+  lonB = lonB * PI / 180.0;
+
+  float deltaLon = lonB - lonA;
+  float X = cos(latB) * sin(deltaLon);
+  float Y = cos(latA) * sin(latB) - sin(latA) * cos(latB) * cos(deltaLon);
+
+  float bearingDegrees = atan2(X, Y) * 180 / PI;
+  if (bearingDegrees &lt; 0) {
+    bearingDegrees += 360.0;
+  }
+  return bearingDegrees;
+}
+
+float calculateDistance(long double latA, long double lonA, long double latB, long double lonB) {
+  latA = latA * PI / 180.0;
+  lonA = lonA * PI / 180.0;
+  latB = latB * PI / 180.0;
+  lonB = lonB * PI / 180.0;
+
+  long double deltaLat = latB - latA;
+  long double deltaLon = lonB - lonA;
+
+  // Haversine formula
+  long double a = sin(deltaLat / 2) * sin(deltaLat / 2)
+                + cos(latA) * cos(latB) * sin(deltaLon / 2) * sin(deltaLon / 2);
+  long double c = 2 * atan2(sqrt(a), sqrt(1 - a));
+
+  return 6371000 * c;   // metres
+}</code></pre>
+          </details>
+          <details class="code">
+            <summary><span class="grow"><span class="t">Hard-iron magnetometer calibration</span><span class="f">magnetometer_calibration.ino · C++ · excerpt</span></span></summary>
+<pre><code class="language-cpp">const int numSamples = 1500;
+float magMin[3] = { 0.0, 0.0, 0.0 };
+float magMax[3] = { 0.0, 0.0, 0.0 };
+float magOffsets[3] = { 0.0, 0.0, 0.0 };
+float f_magCount[3];
+
+void calibrateMagnetometerOffsets() {
+  // Rotate the robot through all orientations while sampling
+  for (int i = 0; i &lt; numSamples; i++) {
+    mpu.readMagData(f_magCount);
+    for (int j = 0; j &lt; 3; j++) {
+      if (f_magCount[j] &lt; magMin[j]) magMin[j] = f_magCount[j];
+      if (f_magCount[j] &gt; magMax[j]) magMax[j] = f_magCount[j];
+    }
+    delay(10);
+  }
+  // Hard-iron offset is the centre of the measured range on each axis
+  for (int i = 0; i &lt; 3; i++) {
+    magOffsets[i] = (magMin[i] + magMax[i]) / 2.0;
+  }
+}</code></pre>
+          </details>
+        </div>
+      </article>
+
+      <article class="project" id="ertc-turtlebot">
+        <div class="project-head">
+          <span class="context">M.Sc. course · University of Padova · Embedded Real-Time Control · 2023</span>
+          <h3>Embedded real-time control on a TurtleBot (STM32)</h3>
+        </div>
+        <p class="project-summary">Bare-metal firmware on an STM32 board, built up lab by lab: timers and PWM, sensor fusion, closed-loop wheel speed control and finally an autonomous line follower. Everything was written in C with the STM32 HAL and logged to MATLAB over serial.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Lab</th><th>System</th><th>What I built</th></tr></thead>
+            <tbody>
+              <tr><td>Lab 2</td><td>Pan-tilt camera mount, BNO055 IMU</td><td>50 Hz servo PWM from timer setup, tilt from the accelerometer, yaw from gyro integration, Kalman filter fusion</td></tr>
+              <tr><td>Lab 3</td><td>Wheel motors, quadrature encoders, DRV8871</td><td>4x encoder speed measurement at 10 ms, PI speed control to 120 rpm, anti-windup, forward-brake vs forward-coast drive, keypad reference over I²C</td></tr>
+              <tr><td>Lab 4</td><td>TurtleBot with 8-channel line sensor</td><td>Weighted line-position error, differential wheel speed references, adaptive speed on straights and curves, noise rejection on a degraded track</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure class="single" style="max-width:none">
+          <img src="assets/img/ertc-line-follower.jpg" alt="Three MATLAB plots over a 35 second run: speed references and measured speeds of wheel 1 and wheel 2 tracking closely, and the line-position error stepping between about minus 0.01 and plus 0.01" loading="lazy">
+          <figcaption>Lab 4, on the robot: both wheel speeds tracking their references (blue reference, orange measured, rpm) as the line-position error (m) changes through the curves.</figcaption>
+        </figure>
+
+        <div class="split">
+          <figure class="single" style="max-width:none">
+            <img src="assets/img/ertc-pi-speed.jpg" alt="Two plots of wheel speed rising from zero and settling at the 120 rpm reference within about five seconds" loading="lazy">
+            <figcaption>Lab 3: PI speed loop (Kp = 4, Ki = 1) bringing both wheels to the 120 rpm reference.</figcaption>
+          </figure>
+          <dl class="pwr" style="grid-template-columns:1fr">
+            <div>
+              <dt>Speed loop</dt>
+              <dd>Encoder counts are differenced every 10 ms, with wrap-around handled in both directions, and converted to rpm. The PI output is a motor voltage, saturated at ±7.9 V and mapped to a 250 Hz PWM duty cycle.</dd>
+            </div>
+            <div>
+              <dt>Line following</dt>
+              <dd>Each of the 8 sensors is weighted by its distance from the centre. The averaged error shifts the two wheel speed references in opposite directions, with a gain tuned between 85 and 90. On the hard track, readings with five or more sensors active, or none, are treated as noise.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <ul class="tools"><li>C</li><li>STM32 HAL</li><li>Timers / PWM / encoders</li><li>I²C</li><li>BNO055 IMU</li><li>Kalman filter</li><li>MATLAB serial logging</li></ul>
+
+        <div class="code-group">
+          <details class="code">
+            <summary><span class="grow"><span class="t">PI speed control with anti-windup</span><span class="f">Lab 3 · C · excerpt</span></span></summary>
+<pre><code class="language-c">TrackingError = refSignal - SPEED;
+proportionalTerm = Kp * TrackingError;
+uIntegral = uIntegral + Ki * TS * TrackingError - Kw * (u - us) * TS;
+u = uIntegral + proportionalTerm;   // control signal in volts
+
+us = u &gt; 7.9 ? 7.9 : u;             // saturate to the supply range
+us = us &lt; -7.9 ? -7.9 : us;
+
+duty = (int)V2DUTY * us;</code></pre>
+          </details>
+          <details class="code">
+            <summary><span class="grow"><span class="t">Line-sensor error and wheel speed references</span><span class="f">Lab 4 · C · excerpt</span></span></summary>
+<pre><code class="language-c">/* Evaluate line sensor error */
+for (int i = 0; i &lt; 8; i++) {
+  b[i] = lineSensor &amp; (1 &lt;&lt; i);
+  w[i] = (3.5 - i) * 0.004;          // sensor offset from centre, m
+  if (b[i] &gt;= 1) {
+    b[i] = 1;
+  }
+  e += (w[i] * (float)b[i]);
+  den += b[i];
+}
+if (den != 0) {
+  e = e / den;
+}
+
+/* Speed up on straights, slow down in curves */
+if (e == 0 &amp;&amp; maxSpeed &lt;= 200) {
+  maxSpeed += 0.7;
+}
+else if (maxSpeed &gt;= 50) {
+  maxSpeed -= 0.1;
+}
+
+refSignal2 = maxSpeed - (k * e);
+refSignal  = maxSpeed + (k * e);</code></pre>
+          </details>
+        </div>
+      </article>
+
+      <article class="project" id="weather-cnn">
+        <div class="project-head">
+          <span class="context">M.Sc. course · University of Padova · Computer Vision · 2023–2024</span>
+          <h3>Weather classification from driving images (CNN)</h3>
+        </div>
+        <p class="project-summary">A convolutional neural network that labels road-scene images from the ACDC driving dataset by weather condition: clear, fog, night, rain or snow. It reached <strong>89.4% accuracy</strong> on the held-out test set.</p>
+
+        <figure class="single" style="max-width:none">
+          <img src="assets/img/cv-weather-predictions.jpg" alt="Five test images with predicted and real labels: snow correct, clear correct, a night scene wrongly predicted as rain, night correct, and fog correct" loading="lazy">
+          <figcaption>Test-set predictions. The third image is a miss: a night scene predicted as rain.</figcaption>
+        </figure>
+
+        <dl class="pwr">
+          <div><dt>Pipeline</dt><dd>Images resized to 128×128, normalised to [0, 1], shuffled and one-hot encoded.</dd></div>
+          <div><dt>Model</dt><dd>Three convolution and max-pooling stages (32, 64, 128 filters), a 128-unit dense layer and a softmax output. Trained with Adam for 25 epochs.</dd></div>
+          <div><dt>Finding</dt><dd>Grayscale conversion and histogram equalisation lowered accuracy, likely because colour carries much of the weather information. The final model keeps full colour.</dd></div>
+        </dl>
+
+        <ul class="tools"><li>Python</li><li>TensorFlow / Keras</li><li>OpenCV</li><li>scikit-learn</li></ul>
+
+        <div class="code-group">
+          <details class="code">
+            <summary><span class="grow"><span class="t">CNN model and training</span><span class="f">Python · excerpt</span></span></summary>
+<pre><code class="language-python">model = models.Sequential()
+
+model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(128, 128, 3)))
+model.add(layers.MaxPooling2D((2, 2)))
+
+model.add(layers.Conv2D(64, (3, 3), activation='relu'))
+model.add(layers.MaxPooling2D((2, 2)))
+
+model.add(layers.Conv2D(128, (3, 3), activation='relu'))
+model.add(layers.MaxPooling2D((2, 2)))
+
+model.add(layers.Flatten())
+model.add(layers.Dense(128, activation='relu'))
+model.add(layers.Dense(Y_train_encoded.shape[1], activation='softmax'))
+
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+epochs = 25
+model.fit(X_train, Y_train_encoded, epochs=epochs)
+
+test_loss, test_accuracy = model.evaluate(X_test, Y_test_encoded)
+print(f"Test Accuracy: {test_accuracy*100:.2f}%")</code></pre>
+          </details>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap next-cta">
+      <div class="section-head" style="margin:0">
+        <span class="label">Next</span>
+        <h2>Want the details behind a project?</h2>
+      </div>
+      <a class="btn" href="about.html#contact">Contact me</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Imad Serhal</span>
+    <span><a href="index.html">Resume</a> · <a href="projects.html">Projects</a> · <a href="about.html">About</a> · <a href="https://www.linkedin.com/in/imadserhal" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
