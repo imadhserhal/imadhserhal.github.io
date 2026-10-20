@@ -400,3 +400,8 @@ section.discipline[hidden] { display: none; }
 .role-media figcaption { max-width: 340px; }
 
 .preview-more { margin: 20px 0 0; }
+
+.contact-line { list-style: none; margin: -4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 0; font-size: 0.9375rem; color: var(--muted); }
+.contact-line li + li::before { content: "·"; margin: 0 10px; color: var(--muted); }
+.contact-line a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.contact-line a:hover { color: var(--accent); border-color: var(--accent); }
