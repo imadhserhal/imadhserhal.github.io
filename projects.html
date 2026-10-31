@@ -43,10 +43,10 @@
   <nav class="discipline-nav" aria-label="Disciplines">
     <div class="wrap">
       <ul>
-        <li><a href="#projects" data-filter="all" class="active">All <span class="count">11</span></a></li>
+        <li><a href="#projects" data-filter="all" class="active">All <span class="count">12</span></a></li>
         <li><a href="#mechanical" data-filter="mechanical">Mechanical Design <span class="count">2</span></a></li>
         <li><a href="#control" data-filter="control">Control Systems <span class="count">2</span></a></li>
-        <li><a href="#automation" data-filter="automation">Industrial Automation <span class="count">4</span></a></li>
+        <li><a href="#automation" data-filter="automation">Industrial Automation <span class="count">5</span></a></li>
         <li><a href="#embedded" data-filter="embedded">Other <span class="count">3</span></a></li>
       </ul>
     </div>
@@ -101,6 +101,12 @@
         <span class="label">Industrial Automation</span>
         <strong>Test-data &amp; report generator</strong>
         <span class="pcard-text">Python desktop app that turns logger and CAN data into a finished Word report.</span>
+      </a>
+      <a class="pcard" href="#dcdc-test" data-discipline="automation">
+        <img src="assets/img/thumbs/dcdc-test.jpg" alt="" loading="lazy" width="640" height="400">
+        <span class="label">Industrial Automation</span>
+        <strong>DC-DC converter thermal test</strong>
+        <span class="pcard-text">Thermal stability and OCP, OVP, UVP checks in a climate chamber.</span>
       </a>
     </div>
     <div class="other-projects">
@@ -514,7 +520,7 @@ Hz = (3*Tc^2*s^2 + 3*Tc*s + 1) / (Tc*s + 1)^3;</code></pre>
       <header>
         <span class="label">Discipline 3 of 3</span>
         <h2>Industrial Automation</h2>
-        <p>Siemens TIA Portal V15 programs tested against Factory I/O plant models through S7-PLCSIM, a virtual-commissioning workflow, plus an in-house Python tool that automates test-data analysis and reporting. The demo videos play silently.</p>
+        <p>Siemens TIA Portal V15 programs tested against Factory I/O plant models through S7-PLCSIM, a virtual-commissioning workflow, plus an in-house Python tool that automates test-data analysis and reporting, and a component test from industry. The demo videos play silently.</p>
       </header>
 
       <article class="project" id="plc-sorting">
@@ -577,6 +583,15 @@ Hz = (3*Tc^2*s^2 + 3*Tc*s + 1) / (Tc*s + 1)^3;</code></pre>
           <h3>Test-data analysis and report generator</h3>
         </div>
         <p>Writing a test report used to mean exporting logger data, cleaning it in spreadsheets, building plots by hand and pasting everything into a Word template. I built a desktop application that does the whole chain in one place: it reads data-logger and CAN-bus logs, lets the engineer clean and analyse the signals interactively, and generates a complete, numbered Word report from a template in one click.</p>
+        <div class="howto">
+          <h4>How I run a test</h4>
+          <ol>
+            <li><b>Bench and instruments</b><span>Fixture, sensors and wiring set up to the procedure, instruments checked for calibration.</span></li>
+            <li><b>Data logging</b><span>Hioki data logger for voltage, current and temperature, CAN-bus logs for speed, current and fault codes.</span></li>
+            <li><b>Analysis</b><span>Logs cleaned, aligned and plotted in this Python tool, results checked against the acceptance criteria.</span></li>
+            <li><b>Issued report</b><span>Procedure, acceptance criteria, results and a pass/fail verdict, generated as a numbered Word report.</span></li>
+          </ol>
+        </div>
         <figure class="single" style="max-width:none">
           <img src="assets/img/report-tool-flow.png" alt="Five-step workflow: inputs, clean and align, analyse, assemble, generate a numbered Word report" loading="lazy">
           <figcaption>Workflow of the application. Each step is a tab in the GUI.</figcaption>
@@ -663,6 +678,34 @@ Hz = (3*Tc^2*s^2 + 3*Tc*s + 1) / (Tc*s + 1)^3;</code></pre>
           </details>
         </div>
       </article>
+
+      <article class="project" id="dcdc-test">
+        <div class="split">
+          <figure class="stack" style="margin:0">
+            <img src="assets/img/dcdc-setup.jpg" alt="DC-DC converter wired through a climate chamber port to an electronic load, a data logger and a bench supply" loading="lazy">
+            <figcaption>Test bench: converter inside the climate chamber, electronic load, data logger and supply outside. Labels and readings blurred.</figcaption>
+          </figure>
+          <div class="stack">
+            <div class="project-head">
+              <span class="context">Industry case study · component verification</span>
+              <h3>DC-DC converter thermal and protection test</h3>
+            </div>
+            <p>The goal was to check that a DC-DC converter stays thermally stable at its rated current in the worst-case ambient, and that its protections trip the way the datasheet says.</p>
+            <ul>
+              <li>7 thermocouples on the converter, mounted as on the machine, inside a climate chamber at 40 °C (worst case).</li>
+              <li>Converter fed from a constant-voltage supply, output current raised in steps with an electronic load.</li>
+              <li>Each step held until thermal stability: shell temperature rising less than 0.5 °C per 5 min.</li>
+              <li>Temperature, current and voltage logged with a Hioki data logger at 10 ms.</li>
+              <li>Over-current, over-voltage and under-voltage protections (OCP, OVP, UVP) then triggered and checked against the datasheet.</li>
+            </ul>
+            <p><strong>Result:</strong> the converter stayed thermally stable slightly above its rated current, and all three protections tripped within the datasheet limits.</p>
+            <p><strong>My role:</strong> I set up the bench and instruments, ran the test, analysed the data and wrote the report.</p>
+            <p class="note">Product, part numbers and measured values are not shown.</p>
+            <ul class="tools"><li>Climate chamber</li><li>Thermocouples</li><li>Hioki data logger</li><li>Electronic load</li><li>OCP / OVP / UVP</li><li>Python analysis</li></ul>
+          </div>
+        </div>
+      </article>
+
 
     </div>
   </section>

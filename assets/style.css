@@ -416,3 +416,11 @@ section.discipline[hidden] { display: none; }
 .pcard.mini .label { padding-top: 10px; }
 .pcard.mini strong { font-size: 0.9375rem; }
 .pcard.mini .pcard-text { padding-bottom: 10px; font-size: 0.8125rem; }
+
+.howto { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 16px 18px; }
+.howto h4 { margin: 0 0 12px; font-size: 0.9375rem; }
+.howto ol { list-style: none; counter-reset: st; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+.howto li { counter-increment: st; display: grid; gap: 4px; align-content: start; }
+.howto li b::before { content: counter(st) ". "; color: var(--accent); font-family: var(--font-mono); }
+.howto li b { font-size: 0.9375rem; }
+.howto li span { font-size: 0.875rem; color: var(--muted); line-height: 1.45; }
